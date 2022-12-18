@@ -1,0 +1,3 @@
+2022-12-19 00:39:45.006  INFO 6884 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 11.0.16 on LAPTOP-IIUBNPS2 with PID 6884 (C:\Users\mesha\OneDrive\Desktop\SpringBoot\EmployeePayrollApp\target\classes started by mesha in C:\Users\mesha\OneDrive\Desktop\SpringBoot\EmployeePayrollApp)
+2022-12-19 00:39:45.007 DEBUG 6884 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v2.7.6, Spring v5.3.24
+2022-12-19 00:39:45.008  INFO 6884 --- [restartedMain] c.b.e.EmployeePayrollApplication         : No active profile set, falling back to 1 default profile: "default"
