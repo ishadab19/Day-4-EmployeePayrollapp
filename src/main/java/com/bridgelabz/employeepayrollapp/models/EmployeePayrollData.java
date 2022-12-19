@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Data
 public class EmployeePayrollData {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //to maintain continuity 1,3,4,5
     private int employeeId;
     private String name;
     private long salary;
@@ -20,7 +20,12 @@ public class EmployeePayrollData {
     public EmployeePayrollData() {
     }
 
-    public EmployeePayrollData(int employeeId, EmployeePayrollDTO employeePayrollDTO) {
+    public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO){ //for save
+        this.name = employeePayrollDTO.name;
+        this.salary = employeePayrollDTO.salary;
+    }
+
+    public EmployeePayrollData(int employeeId, EmployeePayrollDTO employeePayrollDTO) { //update
         this.employeeId = employeeId;
         this.name = employeePayrollDTO.name;
         this.salary = employeePayrollDTO.salary;
